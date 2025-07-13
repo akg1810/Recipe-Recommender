@@ -1,0 +1,101 @@
+
+/*navbar*/
+*{
+  user-select: none;
+}
+.logout-button {
+    background-color: transparent; /* Transparent background */
+    color: white; /* White text color */
+    border: 2px solid white; /* White border */
+    padding: 8px 30px; /* Padding for a comfortable clickable area */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+    font-size: 19px;
+}
+  
+.logout-button:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Light white overlay on hover */
+    color: #fff; /* Maintain white text color on hover */
+}
+
+  /*search-bar*/
+.user-page{
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 241);
+}
+#searchbar{
+  padding-top: 7%;
+  min-height: 280px;
+  background-image: url(../assets/back.jpg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 35px;
+  position: relative;
+  overflow: hidden;
+}
+#searchbar::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Example: White overlay with 50% opacity */
+  z-index: 1;
+}
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    width: 75%; /* Set appropriate width */
+    height: 50px;
+    background-color: white;
+    border-radius: 25px; /* Rounded corners */
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    overflow: hidden; /* Ensures child elements don't spill over rounded corners */
+  }
+  
+  .search-input {
+    flex: 1; /* Takes up all available space */
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 25px 0 0 25px; /* Rounded only on left side */
+    outline: none; /* Remove default highlight */
+  }
+  
+  .search-button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .icon-hover-effect {
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for transform and color properties */
+  }
+  .icon-hover-effect:hover {
+    transform: scale(1.1); /* Slightly larger on hover */
+    color: #000; /* Change color on hover (adjust as necessary) */
+  }
+  
+/*cards*/
+.recipes{
+  padding-inline: 80px;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-bottom: 60px;
+  gap: 40px;
+}
+.cards-area{
+  gap: 50px;
+  padding-inline: 80px;
+  flex-wrap: wrap;
+  flex-direction: row;
+}

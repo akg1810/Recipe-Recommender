@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+
+  .auth-page{
+    background: rgb(199,180,151);
+    background: linear-gradient(90deg, rgba(199,180,151,1) 21%, rgba(92,92,92,1) 100%);
+    min-height: 100vh;
+  }
+  .auth-container{
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    padding-inline: 10%;
+    align-items:center;
+    margin-top: 4%;
+  }
+  .auth-illustration{
+    width: 60%;
+    text-align: center;
+  }
+  .auth-illustration img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.auth-card{
+    flex-direction: column;
+    gap: 50px;
+    height: 500px;
+    width: 70%;
+    padding: 60px;
+    
+    
+}
+.auth-card h1{
+    font-size: 55px;
+}
+.auth-input-group {
+    margin-bottom: 50px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.auth-input-group .input-with-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+
+.auth-error {
+    color: red;
+    margin-bottom: 20px;
+}
+
+.auth-input-group .input-with-icon .icon {
+    position: absolute;
+    left: 10px;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.auth-input-group .input-with-icon input {
+    width: 100%;
+    padding: 10px 10px 10px 35px; /* Allow space for the icon */
+    font-size: 17px;
+    border: 1px solid #ddd;
+    transition: border-color 0.3s ease;
+
+    border: none;
+    border-bottom: 2px solid #031926;
+    height: 30px;
+    background-color: transparent;
+    outline: none;
+}
+
+.auth-input-group .input-with-icon input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.auth-input-group .input-with-icon label {
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: black;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    font-size: 17px;
+}
+
+/* Hide label when input is not empty or focused */
+.auth-input-group .input-with-icon.not-empty label,
+.auth-input-group .input-with-icon input:focus + label {
+    transform: translateY(-30px);
+    font-size: 12px;
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Change the color of the icon on focus */
+.auth-input-group .input-with-icon input:focus + label + .icon {
+    color: #007bff;
+}
+
+/* Eye icon for toggling password visibility */
+.auth-input-group .eye-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: black;
+    transition: color 0.3s ease;
+}
+
+.auth-input-group .eye-icon:hover {
+    color: #000000;
+}
+
+.auth-submit {
+    width: 100%;
+    padding: 10px;
+    color: white;
+    background: #031926;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: "Montserrat", sans-serif;
+}
+
+.auth-submit:hover {
+    background: #494949;
+}
+
+.toggle-auth-mode {
+    background: none;
+    border: none;
+    color: #376392;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-decoration: underline;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+
+.toggle-auth-mode:hover {
+    color: #0056b3;
+}

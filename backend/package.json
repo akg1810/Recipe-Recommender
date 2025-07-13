@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "flask": "^0.2.10",
+    "jwt-decode": "^4.0.0"
+  }
+}

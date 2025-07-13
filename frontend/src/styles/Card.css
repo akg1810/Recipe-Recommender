@@ -1,0 +1,66 @@
+.examples-card {
+    display: block;
+    width: 30%;
+    height: 400px; /* Adjust as needed */
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: flex-end; /* Position text at the bottom */
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .examples-card:hover {
+    transform: scale(1.03); /* Zoom effect on hover */
+  }
+  
+  .card-text {
+    margin: 0;
+    font-size: 18px; /* Adjust as needed */
+    flex-direction: column;
+    gap: 10px;
+    z-index: 1;
+  }
+  .card {
+    width: 30%;
+    height: 400px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background: #fff; /* Fallback background color */
+    cursor: pointer;
+  }
+  .card:hover {
+    transform: scale(1.03); /* Zoom effect on hover */
+  }
+  .card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the whole area */
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+  
+  .card-content {
+    position: relative;
+    z-index: 1;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for text visibility */
+    color: white;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }

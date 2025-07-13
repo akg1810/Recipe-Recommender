@@ -1,0 +1,210 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  .plus-jakarta-sans-font {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+/*navbar*/
+nav{
+    background-color: black;
+    width: 100vw;
+    padding: 0 80px;
+    align-items: center;
+    height: 10%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+.navbar{
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+  }
+.flex{
+    display: flex;
+}
+.navlinks{
+    flex-basis: 730px
+  }
+.navlinks ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+    list-style: none;
+}
+.navlinks ul li a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    transition: color 0.3s, transform 0.3s;
+  }
+.navlinks ul li a:hover {
+  color: rgb(255, 226, 95);
+  transform: scale(1.1);
+}
+/*landingpage*/
+.landingPage{
+    flex-direction: column;
+}
+section {
+    min-height: 100vh;  
+}
+#home{
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height, adjust as necessary */
+  overflow: hidden;
+}
+.video-background {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover the entire container */
+    transform: translate(-50%, -50%);
+    z-index: -1; /* Ensure it stays in the background */
+  }
+  .overlay-content {
+    position: absolute; /* Layer this on top of the video */
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the content */
+    text-align: center;
+    color: white; /* Text color for visibility */
+    z-index: 1; /* Ensure content is above the video */
+  }
+  .cta-button {
+    color: white; /* Button text color */
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    border-color: aliceblue;
+    border-style: solid;
+    border-width: 3px;
+    background: none;
+    font-size: 20px;
+  }
+  
+  .cta-button:hover {
+    background-color: black; /* Darken button on hover */
+  }
+.home-content{
+    padding-top: 20%;
+    align-items: center;
+    justify-content: center ;
+    flex-direction: column;
+    color: aliceblue;
+    gap: 20px;
+    font-size: 36px;
+}
+#aboutus {
+  background-color: rgb(0, 0, 0);
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+}
+.aboutus-content{
+  flex-direction: row;
+  height: 80vh;
+  gap: 50px;
+  justify-content: center;
+  padding-block: 1%;
+  background-color: rgb(236,232,223);
+}
+.aboutus-img{
+  width: 30%;
+  height: 90%;
+  margin-top: auto;
+}
+.aboutus-img img{
+  width: 100%;
+  height: 100%;
+  
+}
+.aboutus-info{
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  gap: 30px;
+}
+.aboutus-stats{
+  flex-direction: row;
+  height: 20vh;
+  padding-block: 3%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  align-items: center; /* Align items vertically in the center (optional) */
+  justify-content: center;
+  background-color: rgb(146, 117, 108);
+  color: aliceblue;
+  font-size: 17px;
+}
+.item {
+  padding: 10px 60px; /* Add some padding for spacing */
+  text-align: center;
+}
+.divider {
+  width: 2px;
+  background-color: #ffffff; /* Color of the dividing line */
+  height: 100%; /* Ensure the line is as tall as its container */
+  /* Add spacing around the divider */
+}
+/*footer*/
+footer{
+    background-color: black;
+    min-height: 25vh;
+    color: aliceblue;
+    padding-top: 80px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding-inline: 110px;
+}
+.footer{
+  flex-direction: column;
+}
+.footer-up{
+  gap: 50px;
+  justify-content: space-between;
+}
+.footer-about{
+  width: 30%;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-links{
+  width: 30%;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer-links ul{
+  list-style: none;
+}
+.footer-links ul li a{
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-contact{
+  width: 30%;
+  flex-direction: column;
+  gap: 30px;
+}
